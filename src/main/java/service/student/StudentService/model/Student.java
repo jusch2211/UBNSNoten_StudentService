@@ -1,18 +1,24 @@
 package service.student.StudentService.model;
 
+import java.util.List;
+
 public class Student {
 
     private Integer id;
-    private String name;
-    private String course;
+    private String firstName;
+    private String lastName;
+    private List<String> courses;
+    private String className;
 
     public Student() {
     }
 
-    public Student(Integer id, String name, String course) {
+    public Student(Integer id, String firstName, String lastName, List<String> courses, String className) {  
         this.id = id;
-        this.name = name;
-        this.course = course;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.courses = courses;
+        this.className = className  ;
     }
 
     public Integer getId() {
@@ -23,19 +29,35 @@ public class Student {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getCourse() {
-        return course;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public List<String> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<String> courses) {
+        this.courses = courses;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
     }
 }

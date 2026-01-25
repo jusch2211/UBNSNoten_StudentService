@@ -17,8 +17,8 @@ public class StudentRepository {
 
         // Statische Demo-Daten
     public StudentRepository() {
-        save(new Student(null, "Max Mustermann", "Informatik"));
-        save(new Student(null, "Erika Musterfrau", "Mathematik"));
+        save(new Student(123, "Max", "Mustermann", new ArrayList<>(Arrays.asList("Informatik", "Physik")), "BGT111"));
+        save(new Student(124, "Erika", "Musterfrau", new ArrayList<>(Arrays.asList("Mathematik")), "BGT111"));
     }
 
     public List<Student> findAll() {
