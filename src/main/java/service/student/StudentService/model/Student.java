@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Student {
 
-    private Integer id;
+    private Long id;
     private String firstName;
     private String lastName;
     private List<String> courses;
@@ -13,7 +13,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(Integer id, String firstName, String lastName, List<String> courses, String className) {  
+    public Student(Long id, String firstName, String lastName, List<String> courses, String className) {  
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -21,11 +21,11 @@ public class Student {
         this.className = className  ;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
