@@ -2,15 +2,11 @@ package service.student.StudentService.persistence;
 
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import service.student.StudentService.model.*;
-import service.student.StudentService.service.StudentController;
 
 
 @Repository
